@@ -48,12 +48,28 @@ int simple_operations(int NOTES[7]) {
 }
 
 int graphique_nuage(int NOTES[7]) {
-	for (int i =6; i >= 0; i--) {
-		printf("nombre dans le tableau[%d] est : %d \n", i + 1, NOTES[i]);
-		for (int j = 0; i < NOTES[i]) {
-			printf("Q
+	int max = 0;
+	for (int j=0; j < 7; j++) {
+		printf("nombre dans le tableau[%d] est : %d \n", j + 1, NOTES[j]);
+		if (NOTES[j] > max) {
+			max = NOTES[j];
 		}
 	}
+	printf("%d : \n\n", max);
+	
+	for (max; max <= 0 ; max--) {
+		printf("%d : ", max);
+		for (int i=0; i < 7; i++) {
+			if (NOTES[i] == max) {
+				printf(" ---O--- ");
+			}
+			else {
+				printf("-----------/");
+			}
+		}
+	}
+
+
 }
 
 int main (){
