@@ -67,6 +67,7 @@ int graphique_nuage(int NOTES[7]) {
 				printf("-----------/");
 			}
 		}
+		printf("\n");
 	}
 
 
