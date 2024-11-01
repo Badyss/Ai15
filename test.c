@@ -57,7 +57,7 @@ int graphique_nuage(int NOTES[7]) {
 	}
 	printf("%d : \n\n", max);
 	
-	for (max; max <= 0 ; max--) {
+	for (max; max >= 0 ; max--) {
 		printf("%d : ", max);
 		for (int i=0; i < 7; i++) {
 			if (NOTES[i] == max) {
